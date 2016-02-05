@@ -22,6 +22,12 @@ p {
  */
 .l-content {
     margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
 }
 
 .l-box {
@@ -45,24 +51,28 @@ p {
  */
 
 .banner {
-    background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+    /*background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+    */
+    background: rgb(37, 42, 58);
     text-align: center;
     background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
-
-    height: 200px;
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
+    */z-index: 1;
+    overflow: hidden;
+    position: fixed !important;
+    height: 30%;
     width: 100%;
+    top: 0;
+    left: 0;
     margin-bottom: 3em;
-    display: table;
 }
 
     .banner-head {
-        display: table-cell;
         vertical-align: middle;
         margin-bottom: 0;
-        font-size: 2em;
+        font-size: 3em;
         color: white;
-        font-weight: 500;
+        font-weight: 600;
         text-shadow: 0 1px 1px black;
     }
 
@@ -78,6 +88,7 @@ p {
     margin: 0 auto;
  }
 .pricing-tables {
+    margin-top: 2em;
     margin-bottom: 3.125em;
     text-align: center;
 }
@@ -115,6 +126,7 @@ p {
     .pricing-table-header h2 {
         margin: 0;
         padding-top: 2em;
+        padding-bottom: 1em;
         font-size: 1em;
         font-weight: normal;
 
@@ -125,21 +137,12 @@ p {
  * -- PRICING TABLE PRICE --
  * Styles for the price and the corresponding <span>per month</span>
  */
-.pricing-table-price {
-    font-size: 6em;
-    margin: 0.2em 0 0;
-    font-weight: 100;
-}
-    .pricing-table-price span {
-        display: block;
-        text-transform: uppercase;
-        font-size: 0.2em;
-        padding-bottom: 2em;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.5);
-        *color: #fff;
-    }
+.post-avatar {
+    height:150px;
+    margin: 0.2em 1em 1em;
+    border-radius: 100px;
 
+}
 
 
 /*
